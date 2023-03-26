@@ -6,10 +6,12 @@
 
 
 #include <iostream>
+#include <iomanip>
 #include <stdlib.h>
 #include <math.h>
 using namespace std;
 
+// Calculator Class
 class Calculate{
 	private:
 		int num1;
@@ -48,8 +50,21 @@ Calculate Calculate::operator /(const Calculate & num){
 Calculate operator <<(ostream & os, const Calculate & num){
 	os<<num.num1;
 }
+
 Calculate operator >>(istream & is, const Calculate & num){
 	is>>num.num1;
+}
+
+// Display what you wrote to calculate
+string display;
+
+void ConcatinateDisplay(string num){
+	string temp = num;
+	display = display + " " + temp;
+	cout<<display<<endl<<endl;
+}
+void ConcatinateDisplay(){
+	cout<<display<<endl<<endl;
 }
 
 int main(){
@@ -57,7 +72,11 @@ int main(){
 	char sign, flag = 'y';
 	
 	Calculate numb1(45), numb2(1);
-	cout<<numb1 + numb2;
+	cout.setf(ios::right, ios::adjustfield);
+	cout<<setw(30)<<numb1 + numb2;
+	cout<<endl;
+	cout<<setw(30)<<numb1 + numb2<<numb1;
+	
 	
 //	while(flag == 'y' || flag == 'Y'){
 //		cout<<"Enter First number: ";
