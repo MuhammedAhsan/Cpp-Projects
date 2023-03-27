@@ -71,12 +71,31 @@ int main(){
 	int num1, num2;
 	char sign, flag = 'y';
 	
-	Calculate numb1(45), numb2(1);
+	Calculate numb1(45), numb2(1), numb3;
 	cout.setf(ios::right, ios::adjustfield);
-	cout<<setw(30)<<numb1 + numb2;
+	cout<<setw(30)<<numb3;
 	cout<<endl;
-	cout<<setw(30)<<numb1 + numb2<<numb1;
+//	cout<<setw(30)<<numb1 + numb2<<numb1;
 	
+	cout.setf(ios::left|ios::right, ios::adjustfield);
+	cout<<"-------------------------------"<<endl;
+	cout<<"|"<<setw(3)<<"e"<<setw(3)<<"|"<<setw(4)<<"e^x"<<setw(2)<<"|"<<setw(3)<<"PI"<<setw(3)<<"|"<<setw(3)<<"x!"<<setw(3)<<"|"<<setw(4)<<"MOD"<<setw(2)<<"|"<<endl;
+	cout<<"-------------------------------"<<endl;
+	cout<<"|"<<setw(4)<<"SIN"<<setw(2)<<"|"<<setw(4)<<"COS"<<setw(2)<<"|"<<setw(4)<<"TAN"<<setw(2)<<"|"<<setw(4)<<"LOG"<<setw(2)<<"|"<<setw(3)<<"ln"<<setw(3)<<"|"<<endl;
+	cout<<"-------------------------------"<<endl;
+	cout<<"|"<<setw(4)<<"SQRT"<<setw(2)<<"|"<<setw(4)<<"CUBE"<<setw(2)<<"|"<<setw(4)<<"POW"<<setw(2)<<"|"<<setw(3)<<"("<<setw(3)<<"|"<<setw(3)<<")"<<setw(3)<<"|"<<endl;
+	cout<<"-------------------------------"<<endl;
+	cout<<"-------------------------------"<<endl;
+	cout<<"|"<<setw(3)<<"7"<<setw(3)<<"|"<<setw(3)<<"8"<<setw(3)<<"|"<<setw(3)<<"9"<<setw(3)<<"|"<<setw(3)<<"AC"<<setw(3)<<"|"<<setw(3)<<"%"<<setw(3)<<"|"<<endl;
+	cout<<"-------------------------------"<<endl;
+	cout<<"|"<<setw(3)<<"4"<<setw(3)<<"|"<<setw(3)<<"5"<<setw(3)<<"|"<<setw(3)<<"6"<<setw(3)<<"|"<<setw(3)<<"x"<<setw(3)<<"|"<<setw(3)<<"/"<<setw(3)<<"|"<<endl;
+	cout<<"-------------------------------"<<endl;
+	cout<<"|"<<setw(3)<<"1"<<setw(3)<<"|"<<setw(3)<<"2"<<setw(3)<<"|"<<setw(3)<<"3"<<setw(3)<<"|"<<setw(3)<<"+"<<setw(3)<<"|"<<setw(3)<<"-"<<setw(3)<<"|"<<endl;
+	cout<<"-------------------------------"<<endl;
+	cout<<"|"<<setw(3)<<"0"<<setw(3)<<"|"<<setw(3)<<"."<<setw(3)<<"|"<<setw(3)<<"BACK"<<setw(2)<<"|"<<setw(6)<<"="<<setw(6)<<"|"<<endl;
+	cout<<"-------------------------------"<<endl<<endl;
+	
+	cout<<"Enter Value: ";
 	
 //	while(flag == 'y' || flag == 'Y'){
 //		cout<<"Enter First number: ";
