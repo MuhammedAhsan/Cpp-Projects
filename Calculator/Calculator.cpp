@@ -56,6 +56,15 @@ Calculate operator >>(istream & is, const Calculate & num){
 	is>>num.num1;
 }
 
+//Convert to String
+string convertToString(int num){
+	stringstream ss;
+	ss<<num;
+	string s;
+	ss>>s;
+	return s;
+}
+
 // Display what you wrote to calculate
 string display;
 
@@ -68,14 +77,6 @@ void ConcatinateDisplay(){
 	cout<<display<<endl<<endl;
 }
 
-//Convert to String
-string convertToString(int num){
-	stringstream ss;
-	ss<<num;
-	string s;
-	ss>>s;
-	return s;
-}
 
 int main(){
 	int num1, num2;
