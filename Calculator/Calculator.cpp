@@ -9,6 +9,7 @@
 #include <iomanip>
 #include <stdlib.h>
 #include <math.h>
+#include <sstream>
 using namespace std;
 
 // Calculator Class
@@ -65,6 +66,15 @@ void ConcatinateDisplay(string num){
 }
 void ConcatinateDisplay(){
 	cout<<display<<endl<<endl;
+}
+
+//Convert to String
+string convertToString(int num){
+	stringstream ss;
+	ss<<num;
+	string s;
+	ss>>s;
+	return s;
 }
 
 int main(){
